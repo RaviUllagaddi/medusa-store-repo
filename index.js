@@ -21,7 +21,7 @@ const loaders = require("@medusajs/medusa/dist/loaders/index").default
           if (err) {
             return
           }
-          console.log(`Server is ready on port: ${port}`)
+          console.log(`Server is ready on port:    ${port}`)
         })
       )
 
@@ -30,7 +30,7 @@ const loaders = require("@medusajs/medusa/dist/loaders/index").default
         server
           .shutdown()
           .then(() => {
-            console.info("Gracefully stopping the server.")
+            console.info("Gracefully stopping the server..")
             process.exit(0)
           })
           .catch((e) => {
